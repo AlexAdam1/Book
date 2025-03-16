@@ -1,0 +1,29 @@
+public class Encyclopedia extends Book{
+    private String edition;
+    private String numPages;
+
+    public void setEdition(String edition) {
+        this.edition = edition;
+    }
+
+    public String getEdition() {
+        return edition;
+    }
+
+    public void setNumPages(String numPages) {
+        this.numPages = numPages;
+    }
+
+    public String getNumPages() {
+        return numPages;
+    }
+
+    @Override
+    public void printInfo(){
+        super.printInfo();
+        if (edition != null && numPages != null) {
+            System.out.println("Edition: " + edition);
+            System.out.println("Num Pages: " + numPages);
+        }
+    }
+}
