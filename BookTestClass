@@ -1,0 +1,20 @@
+public class BookTest extends Encyclopedia{
+    public static void main(String[] args) {
+        BookTest newBook = new BookTest();
+        newBook.setTitle("The Hobbit");
+        newBook.setAuthor("J. R. R. Tolkien");
+        newBook.setPublisher("George Allen & Unwin");
+        newBook.setPublicationDate("21 September 1937");
+        BookTest newBook2 = new BookTest();
+        newBook2.setTitle("The Illustrated Encyclopedia of the Universe");
+        newBook2.setAuthor("Ian Ridpath");
+        newBook2.setPublisher("Watson-Guptill");
+        newBook2.setPublicationDate("2001");
+        newBook2.setEdition("2nd");
+        newBook2.setNumPages("384");
+
+        newBook.printInfo();
+        newBook2.printInfo();
+
+    }
+}
